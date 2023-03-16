@@ -15,10 +15,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
   </head>
   <body>
-    <input placeholder="teste placeholder" />
-    <input placeholder="teste placeholder" value="teste" />
-    <input type="email" />
-
-    <button>teste</button>
+    <main>
+      <section>
+        <div class="title">
+          <h1>Acesse a plataforma</h1>
+          <span
+            >Faça login ou registre-se para começar a construir seus projetos
+            ainda hoje.</span
+          >
+        </div>
+        <form>
+          <div class="input-group">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" placeholder="Digite seu e-mail" />
+          </div>
+          <div class="input-group">
+            <div class="password-container">
+              <label for="password">Senha</label>
+              <a href="#">Esqueceu a senha?</a>
+            </div>
+            <input
+              id="password"
+              name="password"
+              placeholder="Digite sua senha"
+            />
+            <span class="error_message"></span>
+          </div>
+          <button type="submit">Entrar</button>
+        </form>
+        <span class="forget"
+          >Ainda não tem uma conta? <a href="#">Inscreva-se</a>
+        </span>
+      </section>
+    </main>
   </body>
 </html>

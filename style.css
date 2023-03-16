@@ -10,6 +10,7 @@
   font-size: 62.5%;
   font-family: "Titillium Web", sans-serif;
 
+  --red: #ed3a5a;
   --purple: #7c3aed;
   --gray-50: #f8fafc;
   --gray-100: #f1f5f9;
@@ -26,6 +27,45 @@
 body {
   font-size: 1.6rem;
   background-color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  max-width: 38.4rem;
+  margin: auto;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+section .title {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.title h1 {
+  color: var(--gray-800);
+  font-size: 3.6rem;
+}
+
+.title span {
+  color: var(--gray-600);
+  font-size: 1.6rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+form button {
+  margin-top: 1.6rem;
 }
 
 input {
@@ -45,4 +85,51 @@ input::placeholder {
 input:hover,
 input:focus {
   border: 0.1em solid var(--purple);
+}
+
+input.error {
+  border: 1px solid var(--red);
+}
+
+label {
+  color: var(--gray-800);
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  width: 100%;
+  padding: 16px;
+  background: var(--purple);
+  color: white;
+  border: 0;
+  border-radius: 0.4em;
+}
+
+.password-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+a,
+a:visited,
+a:hover {
+  color: var(--purple);
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.forget {
+  color: var(--gray-600);
+}
+
+.forget,
+.forget a {
+  font-size: 1.6rem;
 }
